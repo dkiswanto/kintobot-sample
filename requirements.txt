@@ -1,0 +1,12 @@
+Django==1.10
+requests==2.11.1
+line-bot-sdk==1.1.0
+gunicorn==19.0.0
+celery==4.0.2
+celery[redis]
+dj-database-url
+psycopg2
+whitenoise
+redis
+django-environ
+mysqlclient

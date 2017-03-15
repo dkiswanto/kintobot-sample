@@ -1,0 +1,13 @@
+[program:kintobot-celery]
+command=/home/daniagung/kintobot/kintoenv/bin/celery -A kinto_bot_line worker --loglevel=INFO
+environment=PYTHONPATH=/home/daniagung/kintobot
+directory=/home/daniagung/kintobot
+user=daniagung
+numprocs=1
+;stdout_logfile=/var/log/celeryd/myapp.log
+;stderr_logfile=/var/log/celeryd/myapp.log
+autostart=true
+autorestart=true
+startsecs=10
+stopwaitsecs = 600
+priority=998
